@@ -1,0 +1,9 @@
+[
+  {
+    "id" : "hl7.xprod.uv.gender-harmony",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/xprod/ig/uv/gender-harmony/ImplementationGuide/hl7.xprod.uv.gender-harmony",
+    "version" : "1.0.0",
+    "name" : "hl7genderharmony"
+  }
+]
