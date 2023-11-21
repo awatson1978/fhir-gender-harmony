@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Change Log - HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1 v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"18"}
+    h3,h4,h5,h6{--heading-prefix:"18"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="standards-history.html">HL7 History</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="model.html">Model</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="design.html">Design Considerations</a>
+      </li>
+      <li>
+        <a href="implementer.html">Implementer Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="dicom_use_case.html">DICOM PET Scan Use Case</a>
+      </li>
+      <li>
+        <a href="health_maintenance_use_case.html">Health Maintenance Lab Use Case</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">V2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="hl7v2genderharmony.html">V2 Gender Harmony</a>
+      </li>
+      <li>
+        <a href="hl7v2examples.html">V2 Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">CDA
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="cdagenderharmony.html">CDA Gender Harmony</a>
+      </li>
+      <li>
+        <a href="cdaexamples.html">CDA Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="fhirgenderharmony.html">FHIR Guidance</a>
+      </li>
+      <li>
+        <a href="fhirdesignbackground.html">FHIR Design Background</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="externalstandards.html">External Standards</a>
+  </li>
+  <li>
+    <a href="bibliography.html">Bibliography</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+  <li>
+    <a href="artifacts2.html">All Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Change Log</b></li>
+
+          <span style="float:right;">
+
+            <a href="bibliography.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="artifacts2.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1 - Local Development build (v1.0.0). See the <a href="http://hl7.org/xprod/ig/uv/gender-harmony/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Change Log</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#changes-applied-to-fhir-r5-standard" id="markdown-toc-changes-applied-to-fhir-r5-standard">Changes applied to FHIR R5 Standard</a></li>
+  <li><a href="#changes-applied-to-the-hl7-cda-r2-implementation-guide-gender-harmony---sex-and-gender-representation-edition-1-implementation-guide" id="markdown-toc-changes-applied-to-the-hl7-cda-r2-implementation-guide-gender-harmony---sex-and-gender-representation-edition-1-implementation-guide">Changes applied to the <strong>HL7 CDA&reg; R2 Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1</strong> Implementation Guide</a></li>
+  <li><a href="#changes-applied-to-the-v291-standard" id="markdown-toc-changes-applied-to-the-v291-standard">Changes applied to the V2.9.1 Standard</a></li>
+  <li><a href="#changes-to-this-cross-paradigm-implementation-guide" id="markdown-toc-changes-to-this-cross-paradigm-implementation-guide">Changes to this Cross-paradigm Implementation Guide</a></li>
+</ul>
+
+</div>
+  <!-- Updates based on Jira tickets 
+Date             Jira ticket        Updated by                   Comment
+2023-08-20        None              MaryKay McDaniel             Initial creation
+
+2023-09-4
+QUESTION to all...
+1) DID NOT include OTHER-2517, did not seem relevant to the changes made? 
+2) This change log does NOT include and of the FHIR changes made for Gender Harmony - do I need to go back and add them???
+MK -->
+
+<p>This log contains changes that are a result of the HL7 International ballot process for <em>for all cross-paradigm gender harmony publications</em>. The resolution of the community comments have been agreed and voted on by members of the following management and work groups:  CDA Management Group, Financial Management, Orders and Observations, Patient Administration, Patient Care, Structured Documents, Terminology Infrastructure, Terminology Services Management Group, and V2 Management Group.</p>
+
+<h3 id="changes-applied-to-fhir-r5-standard">Changes applied to FHIR R5 Standard</h3>
+<p><strong>Applied:</strong> Wording, formatting, and grammar corrections per 
+<a href="https://jira.hl7.org/browse/FHIR-38861">FHIR-38861</a>, 
+<a href="https://jira.hl7.org/browse/FHIR-39197">FHIR-39197</a>, 
+<a href="https://jira.hl7.org/browse/FHIR-39201">FHIR-39201</a>, 
+<a href="https://jira.hl7.org/browse/FHIR-39202">FHIR-39202</a>, 
+<a href="https://jira.hl7.org/browse/FHIR-39204">FHIR-39204</a>, and
+<a href="https://jira.hl7.org/browse/FHIR-39210">FHIR-39210</a><br/> 
+<strong>Applied:</strong> Removed the element “InternationalEquivalentRecordedSexOrGender” <a href="https://jira.hl7.org/browse/FHIR-38892">FHIR-38892</a>, 
+<a href="https://jira.hl7.org/browse/FHIR-39193">FHIR-39193</a>, and 
+<a href="https://jira.hl7.org/browse/FHIR-39527">FHIR-39527</a><br/> 
+<strong>Applied:</strong> Modified Definition of Specified and Null <a href="https://jira.hl7.org/browse/FHIR-38893">FHIR-38893</a><br/>
+<strong>Applied:</strong> Added PractitionerRole as an allowed context for the GI extension <a href="https://jira.hl7.org/browse/FHIR-39195">FHIR-39195</a><br/>
+<strong>Applied:</strong> Added general language referring implementers to GHP IG for specific guidance on how and when to use  <a href="https://jira.hl7.org/browse/FHIR-39196">FHIR-39196</a><br/>
+<strong>Applied:</strong>  Updated gender-identity value set to use the codes from the source code system (SNOMED) directly instead of importing the NLM value set. <a href="https://jira.hl7.org/browse/FHIR-39198">FHIR-39198</a><br/>
+<strong>Applied:</strong> Updated GI text <a href="https://jira.hl7.org/browse/FHIR-39202">FHIR-39202</a><br/>
+<strong>Applied:</strong> Added “asked-declined” to GI value set <a href="https://jira.hl7.org/browse/FHIR-39238">FHIR-39238</a><br/>
+<strong>Applied:</strong> Update the definition narrative for individual-genderidentity extension <a href="https://jira.hl7.org/browse/FHIR-39246">FHIR-39246</a><br/>
+<strong>Applied:</strong> Modified display names in the value set to remove the “(finding)” parenthetical <a href="https://jira.hl7.org/browse/FHIR-39459">FHIR-39459</a><br/>
+<strong>Applied:</strong> Changes to the guidance and wording in the Sex and Gender section, moving recommendations out of the FHIR base spec and into the GHP IG <a href="https://jira.hl7.org/browse/FHIR-39203">FHIR-39203</a><br/>
+<strong>Applied:</strong> Modified RSG value set <a href="https://jira.hl7.org/browse/FHIR-39205">FHIR-39205</a> and <a href="https://jira.hl7.org/browse/FHIR-39237">FHIR-39237</a><br/>
+<strong>Applied:</strong> Added clarification for RSG <a href="https://jira.hl7.org/browse/FHIR-39232">FHIR-39232</a>, see also <a href="https://jira.hl7.org/browse/OTHER-2463">OTHER-2463</a><br/>
+<strong>Applied:</strong> Change SFCU to SPCU <a href="https://jira.hl7.org/browse/FHIR-39219">FHIR-39219</a><br/>
+<strong>Applied:</strong> Update the unknown code in the SFCU value set to be “unknown” from https://terminology.hl7.org/CodeSystem-data-absent-reason.html <a href="https://jira.hl7.org/browse/FHIR-39231">FHIR-39231</a><br/>
+<strong>Applied:</strong> Clarified definition and display for “Specified” in SFCU values <a href="https://jira.hl7.org/browse/FHIR-39241">FHIR-39241</a><br/>
+<strong>Applied:</strong> Update pronoun value set display text to the same as the LOINC code it represents <a href="https://jira.hl7.org/browse/FHIR-39676">FHIR-39676</a><br/></p>
+
+<h3 id="changes-applied-to-the-hl7-cda-r2-implementation-guide-gender-harmony---sex-and-gender-representation-edition-1-implementation-guide">Changes applied to the <strong>HL7 CDA&reg; R2 Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1</strong> Implementation Guide</h3>
+
+  <!-- Validate the actual name of this IG
+     These are marked at applied, so added to the list. These I did not confirm/validate.
+      OTHER:  2475, 2476, 2478, 2481, 2482, 2483, 2485, 2486, 2489, 2711 -->
+<p><a name="l617">​</a><strong>Completed:</strong> Removed the final <a href="www.hl7.org/permalink/GenderharmonyCDAIG">HL7 CDA&reg; R2 Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1</a> PDF from this guide, the final document is published separately <br/>
+<strong>Applied:</strong> Update CONF:4536-61 conformance verb from SHOULD to SHALL <a href="https://jira.hl7.org/browse/OTHER-2435">OTHER-2435</a><br/>
+<strong>Applied:</strong> In the Gender Identity section added sentence to provide clarity around provenance <a href="https://jira.hl7.org/browse/OTHER-2465">OTHER-2465</a><br/>
+<strong>Applied:</strong> In the Individual Pronouns section added sentence to provide clarity around provenance <a href="https://jira.hl7.org/browse/OTHER-2467">OTHER-2467</a><br/>
+<strong>Applied:</strong> Removed the International Equivalent Recorded Sex or Gender data element <a href="https://jira.hl7.org/browse/OTHER-2469">OTHER-2469</a><br/>
+<strong>Applied:</strong> Updated individual pronouns constraint CONF:4536-61, SHALL contain…code SHOULD be…<a href="https://jira.hl7.org/browse/OTHER-2475">OTHER-2475</a><br/>
+<strong>Applied:</strong> Updated individual pronouns constraint CONF:4436-60 a <a href="https://jira.hl7.org/browse/OTHER-2476">OTHER-2476</a><br/>
+<strong>Applied:</strong> Updated inconsistent conformance verb/cardinality: MAY contain 1..1 effective time <a href="https://jira.hl7.org/browse/OTHER-2477">OTHER-2477</a><br/>
+<strong>Applied:</strong> Updated USG value set binding <a href="https://jira.hl7.org/browse/OTHER-2478">OTHER-2478</a><br/>
+<strong>Applied:</strong> Improved sub-organization modularity for recorded sex and gender <a href="https://jira.hl7.org/browse/OTHER-2480">OTHER-2480</a><br/>
+<strong>Applied:</strong> Added RSG Jurisdiction and Document Type observations value set bindings <a href="https://jira.hl7.org/browse/OTHER-2481">OTHER-2481</a><br/>
+<strong>Applied:</strong> RSG Document Type sub-observation verb/cardinality mismatch corrected <a href="https://jira.hl7.org/browse/OTHER-2482">OTHER-2482</a><br/>
+<strong>Applied:</strong> Updated typo in statusCode “complete” to “completed” <a href="https://jira.hl7.org/browse/OTHER-2483">OTHER-2483</a><br/>
+<strong>Applied:</strong> Corrected RSG constraint CONF:4536-136 urn:oid <a href="https://jira.hl7.org/browse/OTHER-2485">OTHER-2485</a><br/>
+<strong>Applied:</strong> Corrected RSG Xpath for reference narrative guidance <a href="https://jira.hl7.org/browse/OTHER-2486">OTHER-2486</a><br/>
+<strong>Applied:</strong> Updated display name for LA29520-6 <a href="https://jira.hl7.org/browse/OTHER-2489">OTHER-2489</a><br/>
+<strong>Applied:</strong> Fix broken links Gender Identity Core Concepts, Asked but Unknown and Other and harmonize the value set with THO ValueSet Gender Identity <a href="https://jira.hl7.org/browse/OTHER-2498">OTHER-2498</a> and <a href="https://jira.hl7.org/browse/OTHER-2499">OTHER-2499</a><br/>
+<strong>Applied:</strong> Fix broken Pronoun links <a href="https://jira.hl7.org/browse/OTHER-2500">OTHER-2500</a><br/>
+<strong>Applied:</strong> Clarified recorded sex and gender representation Observation: identifier urn:oid:2.16.840.1.113883.10.15.4 <a href="https://jira.hl7.org/browse/OTHER-2501">OTHER-2501</a><br/>
+<strong>Applied:</strong> For consistency, removed RSG CONF:4536-141. It was Not included FHIR R5 or V2.9.1 <a href="https://jira.hl7.org/browse/OTHER-2504">OTHER-2504</a><br/>
+<strong>Applied:</strong> Correction, added missing Act Relationship Types for RSG <a href="https://jira.hl7.org/browse/OTHER-2505">OTHER-2505</a><br/>
+<strong>Applied:</strong> CDA Recorded Sex or Gender Patient Record Type, use Act reference/ExternalAct instead <a href="https://jira.hl7.org/browse/OTHER-2506">OTHER-2506</a> and <a href="https://jira.hl7.org/browse/OTHER-2508">OTHER-2508</a><br/>
+<strong>Applied:</strong> Remove DateTime Template, use effectiveTime <a href="https://jira.hl7.org/browse/OTHER-2507">OTHER-2507</a><br/>
+<strong>Applied:</strong> CDA Recorded Sex or Gender - Sex for Clinical Use SPRT actRelationshipType is “Has Support” <a href="https://jira.hl7.org/browse/OTHER-2510">OTHER-2510</a><br/>
+<strong>Applied:</strong> In CDA, Change SFCU to SPCU based upon resolution of ballot comments <a href="https://jira.hl7.org/browse/OTHER-2470">OTHER-2470</a> and <a href="https://jira.hl7.org/browse/OTHER-2671">OTHER-2671</a><br/>
+<strong>Applied:</strong> CDA Sex for Clinical Use - Unclear Sentence <a href="https://jira.hl7.org/browse/OTHER-2511">OTHER-2511</a><br/>
+<strong>Applied:</strong> Update the conformance statement for observation.value.code at 2.3.13.a.v <a href="https://jira.hl7.org/browse/OTHER-2640">OTHER-2640</a><br/>
+<strong>Applied:</strong> Updated gender null flavor instructions <a href="https://jira.hl7.org/browse/OTHER-2711">OTHER-2711</a><br/></p>
+
+<h3 id="changes-applied-to-the-v291-standard">Changes applied to the V2.9.1 Standard</h3>
+
+<p><strong>Applied:</strong> Wording, typos,broken links, and grammar corrections per 
+<a href="https://jira.hl7.org/browse/V2-25385">V2-25385</a>, 
+<a href="https://jira.hl7.org/browse/V2-25386">V2-25386</a>, 
+<a href="https://jira.hl7.org/browse/V2-25387">V2-25387</a>, 
+<a href="https://jira.hl7.org/browse/V2-25420">V2-25420</a>, 
+<a href="https://jira.hl7.org/browse/V2-25423">V2-25423</a>, 
+<a href="https://jira.hl7.org/browse/V2-25424">V2-25424</a>, 
+<a href="https://jira.hl7.org/browse/V2-25442">V2-25442</a>, 
+<a href="https://jira.hl7.org/browse/V2-25446">V2-25446</a>, 
+<a href="https://jira.hl7.org/browse/V2-25452">V2-25452</a>, 
+<a href="https://jira.hl7.org/browse/V2-25458">V2-25458</a>, 
+<a href="https://jira.hl7.org/browse/V2-25487">V2-25487</a>, and 
+<a href="https://jira.hl7.org/browse/V2-25507">V2-25507</a>, <br/></p>
+
+<p><strong>Applied:</strong> Modified both OBX and 3 new segments, updated guidance <a href="https://jira.hl7.org/browse/V2-25412">V2-25412</a><br/>
+<strong>Applied:</strong> Updated the descriptions of PID-8, GT1-9, and IN1-43 <a href="https://jira.hl7.org/browse/V2-25414">V2-25414</a> and <a href="https://jira.hl7.org/browse/V2-25506">V2-25506</a> <br/>
+<strong>Applied:</strong> Added guidance for name to use in section 3.4.2.5 <a href="https://jira.hl7.org/browse/V2-25415">V2-25415</a><br/>
+<strong>Applied:</strong> Added guidance in Chapter 1 clarifying updates to the underlying base are not expected to automatically be adopted by existing integrations <a href="https://jira.hl7.org/browse/V2-25418">V2-25418</a><br/></p>
+
+<p><strong>Applied:</strong> Modified Table 0821 per 
+<a href="https://jira.hl7.org/browse/V2-25425">V2-25425</a>, 
+<a href="https://jira.hl7.org/browse/V2-25434">V2-25434</a>, 
+<a href="https://jira.hl7.org/browse/FHIR-39459">FHIR-39459</a>, 
+<a href="https://jira.hl7.org/browse/V2-25447">V2-25447</a>, and
+<a href="https://jira.hl7.org/browse/V2-25460">V2-25460</a><br/></p>
+
+<p><strong>Applied:</strong> SFCU changed to SPCU, links provided to the Gender Harmony Implementation Guide <a href="https://jira.hl7.org/browse/V2-25427">V2-25427</a><br/>
+<strong>Applied:</strong> Modified to table to include the final value set description in the FHIR value set <a href="https://jira.hl7.org/browse/V2-25436">V2-25436</a><br/>
+<strong>Applied:</strong> Updated Table 824 in Chapter 2c to align with the FHIR RSG value set http://hl7.org/fhir/extensions/ValueSet-recorded-sex-or-gender-type.html <a href="https://jira.hl7.org/browse/V2-25438">V2-25438</a><br/>
+<strong>Applied:</strong> Modified Table 0826 to align with https://build.fhir.org/valueset-doc-typecodes.html and changed the name of GSR-7 to SourceDocumentTypeForRecordedSexOrGender <a href="https://jira.hl7.org/browse/V2-25439">V2-25439</a> and <a href="https://jira.hl7.org/browse/V2-25454">V2-25454</a><br/></p>
+
+<p><strong>Applied:</strong> Updated Table 0820 per 
+<a href="https://jira.hl7.org/browse/V2-25441">V2-25441</a>, 
+<a href="https://jira.hl7.org/browse/V2-25459">V2-25459</a>, and
+<a href="https://jira.hl7.org/browse/V2-25462">V2-25462</a><br/></p>
+
+<p><strong>Applied:</strong> Updated chapter 2A - Control and Data Types Reference Range Administrative Sex Component for Gender Harmony per <a href="https://jira.hl7.org/browse/V2-25443">V2-25443</a> and <a href="https://jira.hl7.org/browse/V2-25518">V2-25518</a><br/></p>
+
+<p><strong>Applied:</strong> Clarified that V2 will maintain the value set for Sexual Orientation directly, as that is not part of the Gender Harmony project. V2 will also maintain a value set of relevant gender-related LOINC codes for use in OBX-3. <a href="https://jira.hl7.org/browse/V2-25444">V2-25444</a><br/>
+<strong>Applied:</strong> Removed element “InternationalEquivalent” <a href="https://jira.hl7.org/browse/V2-25453">V2-25453</a><br/></p>
+
+<p><strong>Applied:</strong> Updated Table 0823 per 
+<a href="https://jira.hl7.org/browse/V2-25463">V2-25463</a>, 
+<a href="https://jira.hl7.org/browse/V2-25465">V2-25465</a>, and
+<a href="https://jira.hl7.org/browse/V2-25468">V2-25468</a><br/></p>
+
+<p><strong>Applied:</strong> Corrected NK1 (removed SFCU) and added GSP and GSR <a href="https://jira.hl7.org/browse/V2-25471">V2-25471</a> and <a href="https://jira.hl7.org/browse/V2-25478">V2-25478</a><br/></p>
+
+<p><strong>Applied:</strong> Moved the Gender Harmony segments to before PRT and after PD1, to align with the ordering defined in Chapter 3 <a href="https://jira.hl7.org/browse/V2-25473">V2-25473</a><br/></p>
+
+<h3 id="changes-to-this-cross-paradigm-implementation-guide">Changes to this Cross-paradigm Implementation Guide</h3>
+<h4 id="changes-applied-across-the-implementation-guide">Changes applied across the Implementation Guide</h4>
+<p><strong>Applied:</strong> Add links of a model acronym to the model heading for the element, to organizations, named specifications <a href="https://jira.hl7.org/browse/OTHER-2521">OTHER-2521</a><br/>
+<strong>Applied:</strong> Added additional depth to the TOC <a href="https://jira.hl7.org/browse/OTHER-2526">OTHER-2526</a><br/>
+<strong>Applied:</strong> Standardized the use of “Gender Harmony initial informative specification” when referring to initial specification <a href="https://jira.hl7.org/browse/OTHER-2570">OTHER-2570</a><br/>
+<strong>Applied:</strong> Links to ValueSet and CodeSystems, binding strength definitions, and standardized ValueSet and datatype name capitalization <a href="https://jira.hl7.org/browse/OTHER-2574">OTHER-2574</a><br/>
+<strong>Applied:</strong> Remove notes to balloters <a href="https://jira.hl7.org/browse/OTHER-2571">OTHER-2571</a>, <a href="https://jira.hl7.org/browse/OTHER-2602">OTHER-2602</a>, and <a href="https://jira.hl7.org/browse/OTHER-2604">OTHER-2604</a><br/>
+<strong>Applied:</strong> Update SFCU to SPCU throughout the Gender Harmony IG and capitalized consistently
+<a href="https://jira.hl7.org/browse/OTHER-2414">OTHER-2414</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2671">OTHER-2671</a>, and 
+<a href="https://jira.hl7.org/browse/OTHER-2706">OTHER-2706</a>, <br/>
+<strong>Applied:</strong> Consistent capitalization of Gender Harmony <a href="https://jira.hl7.org/browse/OTHER-2580">OTHER-2580</a><br/>
+<strong>Applied:</strong> Corrected footer published by <a href="https://jira.hl7.org/browse/OTHER-2523">OTHER-2523</a><br/>
+<strong>Applied:</strong> The tab “History” was modified to Change Log <a href="https://jira.hl7.org/browse/OTHER-2592">OTHER-2592</a><br/>
+<strong>Applied:</strong> Wording, typos, and grammar corrections per <a href="https://jira.hl7.org/browse/OTHER-2491">OTHER-2491</a><br/>
+<strong>Applied:</strong> Added (shownav parameter) that inserts forward/backward navigation at top and bottom <a href="https://jira.hl7.org/browse/OTHER-2516">OTHER-2516</a><br/></p>
+
+<h4 id="changes-applied-to-home-page">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/index.html#home">Home Page</a></h4>
+<p><strong>Applied:</strong> Wording, typos, and grammar corrections per <a href="https://jira.hl7.org/browse/OTHER-2531">OTHER-2531</a>, <a href="https://jira.hl7.org/browse/OTHER-2561">OTHER-2561</a>, <a href="https://jira.hl7.org/browse/OTHER-2563">OTHER-2563</a>, and <a href="https://jira.hl7.org/browse/OTHER-2565">OTHER-2565</a><br/>
+<strong>Applied:</strong> Further explanation of ‘harmony’ in gender harmony <a href="https://jira.hl7.org/browse/OTHER-2594">OTHER-2594</a><br/>
+<strong>Applied:</strong> Improved the readability and formatting of the In-scope section <a href="https://jira.hl7.org/browse/OTHER-2562">OTHER-2562</a> and <a href="https://jira.hl7.org/browse/OTHER-2528">OTHER-2528</a>, Added links to the model page for GI, SPCU, RSG, Pronouns, NtU <a href="https://jira.hl7.org/browse/OTHER-2532">OTHER-2532</a><br/>
+<strong>Applied:</strong> Updated the name of section 1.4.3 from Vendors to HIT System solution providers <a href="https://jira.hl7.org/browse/OTHER-2515">OTHER-2515</a><br/>
+<strong>Applied:</strong> Updated to use the word ‘harmony’ to ‘harmonize’ <a href="https://jira.hl7.org/browse/OTHER-2594">OTHER-2594</a><br/>
+<strong>Applied:</strong> Added links to DICOM and X12 <a href="https://jira.hl7.org/browse/OTHER-2564">OTHER-2564</a><br/> 
+<strong>Applied:</strong> Modified first sentence of the HIT System solution providers <a href="https://jira.hl7.org/browse/OTHER-2421">OTHER-2421</a><br/>
+<strong>Applied:</strong> Improved the footnote notation using MD based footnote syntax <a href="https://jira.hl7.org/browse/OTHER-2560">OTHER-2560</a><br/></p>
+
+<h4 id="changes-applied-to-background-page">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/background.html#background">Background Page</a></h4>
+<p><strong>Applied:</strong> Minor wording, typos, and grammar corrections per <a href="https://jira.hl7.org/browse/OTHER-2533">OTHER-2533</a>, <a href="https://jira.hl7.org/browse/OTHER-2535">OTHER-2535</a>, <a href="https://jira.hl7.org/browse/OTHER-2536">OTHER-2536</a>,<a href="https://jira.hl7.org/browse/OTHER-2566">OTHER-2566</a>, <a href="https://jira.hl7.org/browse/OTHER-22568">OTHER-2568</a>, <a href="https://jira.hl7.org/browse/OTHER-2537">OTHER-2537</a>, and <a href="https://jira.hl7.org/browse/OTHER-2567">OTHER-2567</a><br/></p>
+
+<h4 id="changes-applied-to-model-page">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/model.html#model">Model Page</a></h4>
+<p><strong>Applied:</strong> Wording, typos, improved model display, and grammar corrections per 
+<a href="https://jira.hl7.org/browse/OTHER-2411">OTHER-2411</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2420">OTHER-2420</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2480">OTHER-2480</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2492">OTHER-2492</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2494">OTHER-2494</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2519">OTHER-2519</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2572">OTHER-2572</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2573">OTHER-2573</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2575">OTHER-2575</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2576">OTHER-2576</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2577">OTHER-2577</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2578">OTHER-2578</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2581">OTHER-2581</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2582">OTHER-2582</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2585">OTHER-2585</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2597">OTHER-2597</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2625">OTHER-2625</a>, and 
+<a href="https://jira.hl7.org/browse/OTHER-2709">OTHER-2709</a><br/>
+<strong>Applied:</strong> Changed field name from Jurisdiction to Issuer, added Definition, and put Cardinality on its own line <a href="https://jira.hl7.org/browse/OTHER-2586">OTHER-2586</a><br/>
+<strong>Applied:</strong> Updated Source Field Name and Source Field Description <a href="https://jira.hl7.org/browse/OTHER-2587">OTHER-2587</a><br/>
+<strong>Applied:</strong> Updated RSG model definition and other narrative <a href="https://jira.hl7.org/browse/OTHER-2463">OTHER-2463</a><br/>
+<strong>Applied:</strong> Clarified terminology expectations for RSG <a href="https://jira.hl7.org/browse/OTHER-2557">OTHER-2557</a><br/>
+<strong>Applied:</strong> Removed international equivalent references <a href="https://jira.hl7.org/browse/V2-25452">V2-25452</a><br/>
+<strong>Applied:</strong> Confirmed removal of ICAO element and added explanation of change <a href="https://jira.hl7.org/browse/OTHER-2512">OTHER-2512</a><br/>
+<strong>Applied:</strong> Updated GI usage note per <a href="https://jira.hl7.org/browse/OTHER-2539">OTHER-2539</a> and <a href="https://jira.hl7.org/browse/OTHER-2708">OTHER-2708</a><br/>
+<strong>Applied:</strong> Updated UML Model with ballot changes <a href="https://jira.hl7.org/browse/OTHER-2707">OTHER-2707</a><br/>
+<strong>Applied:</strong> Added links for minValueSets for SPCU, Pronouns, and Gender identity <a href="https://jira.hl7.org/browse/OTHER-2540">OTHER-2540</a><br/>
+<strong>Applied:</strong> Clarified use of “sex or gender” <a href="https://jira.hl7.org/browse/OTHER-2532">OTHER-2532</a><br/>
+<strong>Applied:</strong> Added section noting changes in the model when compared to original, conformed changes in bindings and provided links to binding strength definitions <a href="https://jira.hl7.org/browse/OTHER-2589">OTHER-2589</a><br/>
+<strong>Applied:</strong> Added links to separate specifications <a href="https://jira.hl7.org/browse/OTHER-2569">OTHER-2569</a><br/></p>
+
+<h4 id="changes-applied-to-guidance-design-considerations-page">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/design.html#design-considerations">Guidance, Design Considerations Page</a></h4>
+<p><strong>Applied:</strong> Added new ribbon drop-down: Guidance, Place the Design Considerations page under ribbon entry, add new page “Implementer Considerations” <a href="https://jira.hl7.org/browse/OTHER-2472">OTHER-2472</a> and <a href="https://jira.hl7.org/browse/OTHER-2678">OTHER-2678</a><br/>
+<strong>Applied:</strong> Added links, updated wording, typos, and made grammar corrections per 
+<a href="https://jira.hl7.org/browse/OTHER-2541">OTHER-2541</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2542">OTHER-2542</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2543">OTHER-2543</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2546">OTHER-2546</a>,<br/>
+<a href="https://jira.hl7.org/browse/OTHER-2593">OTHER-2593</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2595">OTHER-2595</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2596">OTHER-2596</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2598">OTHER-2598</a>, and 
+<a href="https://jira.hl7.org/browse/OTHER-2599">OTHER-2599</a><br/>
+<strong>Applied:</strong> Modified designated value sets in tables so they are represented consistently <a href="https://jira.hl7.org/browse/OTHER-2509">OTHER-2598</a><br/>
+<strong>Applied:</strong> Removed TBD in RSG section <a href="https://jira.hl7.org/browse/OTHER-2600">OTHER-2600</a> and corrected the “Designated value set”<br/>
+<strong>Applied:</strong> Updated RSG section to align with change in source document to be a concept domain (table 0826). Updated GSR field ids in RSG table for V2 after removal of International equivalent field  <a href="https://jira.hl7.org/browse/OTHER-2479">OTHER-2479</a> and <a href="https://jira.hl7.org/browse/OTHER-2496">OTHER-2496</a><br/>
+<strong>Applied:</strong> Modified text in the “Support zero to many instances” rows for GI and Pronouns <a href="https://jira.hl7.org/browse/OTHER-2422">OTHER-2422</a><br/>
+<strong>Applied:</strong> Modified Name to Use table <a href="https://jira.hl7.org/browse/OTHER-2544">OTHER-2544</a> and <a href="https://jira.hl7.org/browse/OTHER-2674">OTHER-2674</a><br/>
+<strong>Applied:</strong> Updated Gender Identity table to support notion of unknown <a href="https://jira.hl7.org/browse/OTHER-2556">OTHER-2556</a><br/>
+<strong>Applied:</strong> Updated the CDA column of “Support notion of value = unknown” in SPCU table <a href="https://jira.hl7.org/browse/OTHER-2545">OTHER-2545</a><br/>
+<strong>Applied:</strong> Updated the CDA column of ‘Support GH attribute = validity period, type = duration’ in the GI table <a href="https://jira.hl7.org/browse/OTHER-2677">OTHER-2577</a><br/>
+<strong>Applied:</strong> Updated the V2 column of “Specific allowed set of values only” in teh SPCU table <a href="https://jira.hl7.org/browse/OTHER-2627">OTHER-2627</a><br/>
+<strong>Applied:</strong> Modify table entries from “responsibility of template container” to the following row Define where element is available/appropriate for use. All Open CDA Templates allow for using any other defined CDA Templates; The context and use of the «inserttemplatename» is driven by the template in which the template is contained. <a href="https://jira.hl7.org/browse/OTHER-2676">OTHER-2676</a><br/>
+<strong>Applied:</strong> Modified Pronouns section “Supports additional values (example) row <a href="https://jira.hl7.org/browse/OTHER-2589">OTHER-2589</a><br/>
+<strong>Applied:</strong> Modified GI V2 binding section, added “Note: V2 requires a looser binding due to use of a structure that is used across other observations.” <a href="https://jira.hl7.org/browse/OTHER-2522">OTHER-2522</a><br/></p>
+
+<h4 id="changes-applied-to-guidance-implementer-considerations-page">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/implementer.html#implementer-considerations">Guidance, Implementer Considerations Page</a></h4>
+<p><strong>Applied:</strong> Added SPCU considerations <a href="https://jira.hl7.org/browse/OTHER-2558">OTHER-2558</a><br/>
+<strong>Applied:</strong> Added new section Sex assigned at birth-focused Sex Parameter for Clinical Use <a href="https://jira.hl7.org/browse/OTHER-2452">OTHER-2452</a><br/></p>
+
+<h4 id="changes-applied-to-use-cases-dicom-pet-scan-use-case">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/dicom_use_case.html#dicom-pet-scan-use-case">Use Cases, DICOM PET Scan Use Case</a></h4>
+<p><strong>Applied:</strong> Updated use case with changes from 
+<a href="https://jira.hl7.org/browse/OTHER-2411">OTHER-2411</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2423">OTHER-2423</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2424">OTHER-2424</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2426">OTHER-2426</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2451">OTHER-2451</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2488">OTHER-2488</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2548">OTHER-2548</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2549">OTHER-2549</a>,<br/>
+<a href="https://jira.hl7.org/browse/OTHER-2601">OTHER-2601</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2503">OTHER-2603</a>, and 
+<a href="https://jira.hl7.org/browse/OTHER-2607">OTHER-2607</a>, 
+<br/></p>
+
+<h4 id="changes-applied-to-use-cases-health-maintenance-lab-use-case-page">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/health_maintanence_use_case.html#health-maintanence-lab-use-case">Use Cases, Health Maintenance Lab Use Case Page</a></h4>
+<p><strong>Applied:</strong> Updated SPCU code values and fixed heading hierarchy <a href="https://jira.hl7.org/browse/OTHER-2425">OTHER-2425</a><br/></p>
+
+<h4 id="changes-applied-to-v2-v2-gender-harmony-page">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/hl7v2genderharmony.html#v2-gender-harmony">V2, V2 Gender Harmony Page</a></h4>
+<p><strong>Applied:</strong> Updated wording, typos, and made grammar corrections per 
+<a href="https://jira.hl7.org/browse/OTHER-2429">OTHER-2429</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2431">OTHER-2431</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2432">OTHER-2432</a>,
+<a href="https://jira.hl7.org/browse/OTHER-2433">OTHER-2433</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2530">OTHER-2530</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2550">OTHER-2550</a>, and 
+<a href="https://jira.hl7.org/browse/OTHER-2551">OTHER-2551</a>, <br/>
+<strong>Applied:</strong> DICOM use case group has met with GH community and all open DICOM items were transitioned to DICOM supplement 233 <a href="https://jira.hl7.org/browse/OTHER-2454">OTHER-2454</a><br/></p>
+
+<h4 id="changes-applied-to-cda-cda-gender-harmony-page">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/cdagenderharmony.html#cda-gender-harmony">CDA, CDA Gender Harmony Page</a></h4>
+<p><strong>Applied:</strong> Remove notes to balloters <a href="https://jira.hl7.org/browse/OTHER-2571">OTHER-2571</a>, <a href="https://jira.hl7.org/browse/OTHER-2602">OTHER-2602</a>, and <a href="https://jira.hl7.org/browse/OTHER-2604">OTHER-2604</a><br/>
+<strong>Applied:</strong> Update SFCU to SPCU throughout the Gender Harmony IG and capitalized consistently
+<a href="https://jira.hl7.org/browse/OTHER-2414">OTHER-2414</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2671">OTHER-2671</a>, and 
+<a href="https://jira.hl7.org/browse/OTHER-2706">OTHER-2706</a>, <br/></p>
+
+<h4 id="changes-applied-to-cda-cda-examples-page">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/cdaexamples.html#cda-examples">CDA, CDA Examples Page</a></h4>
+<p><strong>Applied:</strong> Updated the NtU example per <a href="https://jira.hl7.org/browse/OTHER-2497">OTHER-2497</a> and <a href="https://jira.hl7.org/browse/OTHER-2436">OTHER-2436</a><br/>
+<strong>Applied:</strong> Updated SPCU example to be more complete <a href="https://jira.hl7.org/browse/OTHER-2471">OTHER-2471</a><br/>
+<strong>Applied:</strong> Updated the Gender Identity example to illustrate the correct usage of the templates <a href="https://jira.hl7.org/browse/OTHER-2464">OTHER-2464</a><br/>
+<strong>Applied:</strong> Updated the Gender Identity example to include ASKU and OTH <a href="https://jira.hl7.org/browse/OTHER-2466">OTHER-2466</a><br/>
+<strong>Applied:</strong> Removed the codeSystem=”NP” from the example <a href="https://jira.hl7.org/browse/OTHER-2487">OTHER-2487</a><br/></p>
+
+<h4 id="changes-applied-to-fhir-fhir-guidance">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/fhirgenderharmony.html#fhir-guidance">FHIR, FHIR Guidance</a></h4>
+<p><strong>Applied:</strong> Split design background into a new page, updated FHIR guidance with much more detail <a href="https://jira.hl7.org/browse/OTHER-2558">OTHER-2558</a><br/>
+<strong>Applied:</strong> Added links, updated wording, typos, and made grammar corrections per 
+<a href="https://jira.hl7.org/browse/OTHER-2411">OTHER-2411</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2428">OTHER-2428</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2616">OTHER-2616</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2617">OTHER-2617</a>,<br/>
+<a href="https://jira.hl7.org/browse/OTHER-2619">OTHER-2619</a>, and 
+<a href="https://jira.hl7.org/browse/OTHER-2629">OTHER-2629</a><br/>
+<strong>Applied:</strong> Added guidance on the R4 backport extension for SPCU <a href="https://jira.hl7.org/browse/OTHER-2618">OTHER-2618</a> and <a href="https://jira.hl7.org/browse/OTHER-2620">OTHER-2620</a><br/></p>
+
+<h4 id="changes-applied-to-fhir-fhir-design-background">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/fhirdesignbackground.html#fhir-design-background">FHIR, FHIR Design Background</a></h4>
+<p><strong>Applied:</strong> Split design background into a new page, updated FHIR guidance with much more detail <a href="https://jira.hl7.org/browse/OTHER-2558">OTHER-2558</a><br/>
+<strong>Applied:</strong> Updated wording, typos, and made grammar corrections per 
+<a href="https://jira.hl7.org/browse/OTHER-2610">OTHER-2610</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2611">OTHER-2611</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2613">OTHER-2613</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2579">OTHER-2579</a>,<br/>
+<a href="https://jira.hl7.org/browse/OTHER-2525">OTHER-2525</a>, and 
+<a href="https://jira.hl7.org/browse/OTHER-2633">OTHER-2633</a> <br/>
+<strong>Applied:</strong> Moved ‘Avoids problems with changing normative content.” to the Advantages column in last two rows of table <a href="https://jira.hl7.org/browse/OTHER-2612">OTHER-2612</a><br/>
+<strong>Applied:</strong> Added ServiceRequest and Procedure to SPCU context, clinical resource types <a href="https://jira.hl7.org/browse/OTHER-2615">OTHER-2615</a><br/>
+<strong>Applied:</strong> Updated Backwards Compatibility for FHIR versions section <a href="https://jira.hl7.org/browse/OTHER-2618">OTHER-2618</a><br/></p>
+
+<h4 id="changes-applied-to-terminology">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/terminology.html#terminology">Terminology</a></h4>
+<p><strong>Applied:</strong> Added links, updated wording, typos, and made grammar corrections per 
+<a href="https://jira.hl7.org/browse/OTHER-2409">OTHER-2409</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2457">OTHER-2457</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2458">OTHER-2458</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2459">OTHER-2459</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2553">OTHER-2553</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2557">OTHER-2557</a>,<br/>
+<a href="https://jira.hl7.org/browse/OTHER-2606">OTHER-2606</a>, 
+<a href="https://jira.hl7.org/browse/OTHER-2630">OTHER-2630</a>, and 
+<a href="https://jira.hl7.org/browse/OTHER-2641">OTHER-2641</a><br/>
+<strong>Applied:</strong> Modified GI values to include FHIR DAR and V3 Null <a href="https://jira.hl7.org/browse/OTHER-2427">OTHER-2427</a><br/>
+<strong>Applied:</strong> Modified Gender Identity section discussion around minimum value set for clarity <a href="https://jira.hl7.org/browse/OTHER-2636">OTHER-2636</a><br/>
+<strong>Applied:</strong> Added additional guidance for RecordedSexOrGender <a href="https://jira.hl7.org/browse/OTHER-2637">OTHER-2637</a><br/>
+<strong>Applied:</strong> Updated SPCU value references <a href="https://jira.hl7.org/browse/OTHER-2552">OTHER-2552</a><br/></p>
+
+<h4 id="changes-applied-to-external-standards">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/externalstandards.html#external-standards">External Standards</a></h4>
+<p><strong>Applied:</strong> Updated wording, typos, add links, and made grammar corrections per <a href="https://jira.hl7.org/browse/OTHER-2590">OTHER-2590</a> and <a href="https://jira.hl7.org/browse/OTHER-2609">OTHER-2609</a><br/>
+<strong>Applied:</strong> Updated DICOM section to align with use of SPCU and final SPCU values <a href="https://jira.hl7.org/browse/OTHER-2608">OTHER-2608</a><br/>
+<strong>Applied:</strong> Added LOINC section, arranged sections in alpha order <a href="https://jira.hl7.org/browse/OTHER-2710">OTHER-2710</a><br/></p>
+
+<h4 id="changes-applied-to-artifacts">Changes applied to <a href="https://build.fhir.org/ig/HL7/fhir-gender-harmony/artifacts2.html#artifacts">Artifacts</a></h4>
+<p><strong>Applied:</strong> Modified to list all IG artifacts as a ‘linked’ Title not separating the title from the url <a href="https://jira.hl7.org/browse/OTHER-2591">OTHER-2591</a><br/>
+<strong>Applied:</strong> Modified reference to VSAC for UV value sets <a href="https://jira.hl7.org/browse/OTHER-2622">OTHER-2622</a><br/></p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="bibliography.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="artifacts2.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/Vocab">HL7 Terminology Infrastruture Work Group</a>.  Package hl7.xprod.uv.gender-harmony#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 11, 2023 10:20-0500">2023-10-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" href="http://hl7.org/xprod/ig/uv/gender-harmony/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R5/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

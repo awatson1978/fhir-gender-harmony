@@ -1,0 +1,19 @@
+﻿hl7genderharmony : Validation Results
+=========================================
+
+err = 2, warn = 5, info = 0
+IG Publisher Version: 1.4.5 Out of date - current version is 1.4.14
+Generated Wed Oct 11 10:20:16 CDT 2023. FHIR version 5.0.0 for hl7.xprod.uv.gender-harmony#1.0.0 (canonical = http://hl7.org/xprod/ig/uv/gender-harmony)
+ Build Errors : 2 / 3 / 0
+ /Users/awatson/Code/implementation-guides/fhir-gender-harmony/fsh-generated/resources/ImplementationGuide-hl7.xprod.uv.gender-harmony : 1 / 2 / 1
+</table>
+== n/a ==
+ERROR: There is no jira specification file defined with the expected name of OTHER-gender-harmony in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
+ERROR: /Users/awatson/Code/implementation-guides/fhir-gender-harmony/output/changelog.html#/html/body/div/div/div/div/div/p/a at Line 305, column 51: The link 'www.hl7.org/permalink/GenderharmonyCDAIG' for "HL7 CDA® R2 Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-hl7.xprod.uv.gender-harmony.json ==
+WARNING: /Users/awatson/Code/implementation-guides/fhir-gender-harmony/fsh-generated/resources/ImplementationGuide-hl7.xprod.uv.gender-harmony: Unknown Parameters: [apply-wg=true]
+WARNING: ImplementationGuide/hl7.xprod.uv.gender-harmony: ImplementationGuide: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ImplementationGuide/hl7.xprod.uv.gender-harmony: ImplementationGuide.definition.parameter[35].code: Unknown Code 'apply-wg' in the system 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters|1.0.0-candidate' for 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters#apply-wg'
