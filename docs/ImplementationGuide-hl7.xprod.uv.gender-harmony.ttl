@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "hl7genderharmony"] ; # 
   fhir:title [ fhir:v "HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-11T10:20:03-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-21T19:15:08-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Terminology Infrastruture Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Terminology Infrastruture Work Group" ] ;

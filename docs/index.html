@@ -262,7 +262,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2023-10-11
+            as of 2023-11-21
           
         
       </td>
@@ -324,7 +324,7 @@ Date             Jira ticket        Updated by                   Comment
 <p><br />
 <br />
 <br />
-This implementation guide contains <em>Informative</em> content discussing the overall Gender Harmony Project (GHP) approach intended to provide definitive guidance on how to exchange clinical sex and gender affirming information using HL7 models. We also provide examples that align with that guidance. The content of this guide must be viewed as accompanying the gender harmony content within the product family-specific specifications found elsewhere. Each of these is described in more detail in other pages of this guide:</p>
+This implementation guide contains <em>Informative</em> content discussing the overall Gender Harmony Project (GHP) approach intended to provide definitive guidance on how to exchange clinical sex and gender information using HL7 models. We also provide examples that align with that guidance. The content of this guide must be viewed as accompanying the gender harmony content within the product family-specific specifications found elsewhere. Each of these is described in more detail in other pages of this guide:</p>
 <ul>
   <li><a href="fhirdesignbackground.html">FHIR Core specification</a> - gender harmony defined extensions and value sets used by <strong><em>all</em></strong> specifications.</li>
   <li><a href="cdagenderharmony.html">CDA</a> - A companion pdf CDA template specification containing gender harmony-specific templates is published separately. When this guide was in ballot the CDA template pdf specification was embedded within this guide. It is now a distinct, separate specification.</li>
@@ -344,17 +344,11 @@ This implementation guide contains <em>Informative</em> content discussing the o
 
 <h3 id="our-goal">Our Goal</h3>
 
-<p>As described in the original Gender Harmony logical model specification:</p>
+<p>Health care is increasingly turning to technology to help improve systems and processes to benefit patients and their health. Ongoing efforts supported by governing agencies and standards committees are responding to the demonstrated need through standards that allow for seamless integration of patient information between systems.</p>
 
-<blockquote>
-  <p>Health care is increasingly turning to technology to help improve systems and processes to benefit patients and their health. Ongoing efforts supported by governing agencies and standards committees are responding to the demonstrated need through standards that allow for seamless integration of patient information between systems.</p>
-</blockquote>
+<p>It is imperative that both sex and gender vocabulary be formally integrated into clinical care because they are not interchangeable. Both influence health outcomes. Gender-marginalized individuals<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> face significant barriers to adequate and culturally responsive healthcare, leading to numerous health disparities. By adopting structured data sets, agnostic systems will be better equipped to transmit (share) and accept data elements that will improve the accuracy of patient information. Furthermore, standardizing data enables information to be combined with other data sources used to evaluate clinical outcomes. While data collection and documentation are critical factors in clinical decision-making, these new data will also promote important dialogue between clinicians and patients. Ultimately, this will assist with improved quality of care, reduced clinician burden and less fragmentation of a person's clinical record.</p>
 
-<blockquote>
-  <p>It is imperative that both sex and gender vocabulary be formally integrated into clinical care because they are not interchangeable. Both influence health outcomes. Gender-marginalized individuals<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> face significant barriers to adequate and culturally responsive healthcare, leading to numerous health disparities. By adopting structured data sets, agnostic systems will be better equipped to transmit (share) and accept data elements that will improve the accuracy of patient information. Furthermore, standardizing data enables information to be combined with other data sources used to evaluate clinical outcomes. While data collection and documentation are critical factors in clinical decision-making, these new data will also promote important dialogue between clinicians and patients. Ultimately, this will assist with improved quality of care, reduced clinician burden and less fragmentation of a person's clinical record.</p>
-</blockquote>
-
-<p>Currently, it is common that a single data element is used to capture both sex and gender information, often assuming these two items are one unified idea. The goal of this specification is to firmly and irrevocably clarify that clinical sex characterization, where useful, is distinct from gender identity and when sharing of other sex or gender datums is important for interoperability, they be identified as a particular recorded sex or recorded gender. In addition, name to use and pronouns are critical information for affirming interactions. Central to the goal of this guide is to “harmonize” Hl7 standards and through that work we hope for consistency in clinical system representation of the specific data elements to be used for independent consideration of sex and gender.  The assessment of their differences promotes the health of women, men, and people of diverse gender identities of all ages. Implementing these changes can improve data accuracy for sex and gender information in health care systems.</p>
+<p>Currently, it is common that a single data element is used to capture both sex and gender information, often assuming these two items are one unified idea. The goal of this specification is to firmly and irrevocably clarify that clinical sex characterization, where useful, is distinct from gender identity and when sharing of other sex or gender datums is important for interoperability, they be identified as a particular recorded sex or recorded gender. Central to the goal of this guide is to “harmonize” Hl7 standards and through that work we hope for consistency in clinical system representation of the specific data elements to be used for independent consideration of sex and gender.  The assessment of their differences promotes the health of women, men, and people of diverse gender identities of all ages. Implementing these changes can improve data accuracy for sex and gender information in health care systems.</p>
 
 <h3 id="scope">Scope</h3>
 
@@ -614,7 +608,7 @@ table, th, td {
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/Vocab">HL7 Terminology Infrastruture Work Group</a>.  Package hl7.xprod.uv.gender-harmony#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 11, 2023 10:20-0500">2023-10-11</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/Vocab">HL7 Terminology Infrastruture Work Group</a>.  Package hl7.xprod.uv.gender-harmony#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 19:15-0500">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

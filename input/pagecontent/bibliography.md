@@ -51,5 +51,3 @@ This is the original bibliography provided in the [Gender Harmony initial inform
 1.	[Fonseca S. Designing forms for gender diversity and inclusion.](https://uxdesign.cc/designing-forms-for-gender-diversity-and-inclusion-d8194cf1f51)
 1.	[Ke M. How to make an LGBTQ+ inclusive survey [Internet]. Medium; 2020.](https://uxdesign.cc/how-to-make-an-lgbtq-inclusive-survey-bfd1d801cc21)
 1.	[Stock K. Changing the concept of “woman” will cause unintended harms [Internet]. The Economist Newspaper Limited; 2018 [cited 2021 Jan 8].](https://www.economist.com/open-future/2018/07/06/changing-the-concept-of-woman-will-cause-unintended-harms)
-1.	Jenkins K. Amelioration and Inclusion: Gender Identity and the Concept of Woman*. Ethics. 2016 Jan;126(2).
-
