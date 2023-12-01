@@ -53,7 +53,7 @@ Currently, it is common that a single data element is used to capture both sex a
 
 #### In-Scope
 
-The consultative process that has produced this HL7 guide continues the work of the initial Gender Harmony project and reflects clinical end user needs on balance with contributors from 2SLGBTQIA+[^2]  organizations such as Fenway Health and active participants with lived experience from the United States and Canada. Vendors were included from Japan, Germany, India, and the United States.
+The consultative process that has produced this HL7 guide continues the work of the initial Gender Harmony project and reflects clinical end user needs of 2SLGBTQIA+[^2] patients.
 
 The in-scope core list of specific gender and sex use-data elements described by the specification, are as follows:
 The in-scope core list of specific gender and sex use-data elements described by the specification, are as follows:
