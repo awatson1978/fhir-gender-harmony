@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Model - HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1 v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="standards-history.html">HL7 History</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="model.html">Model</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="design.html">Design Considerations</a>
+      </li>
+      <li>
+        <a href="implementer.html">Implementer Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="dicom_use_case.html">DICOM PET Scan Use Case</a>
+      </li>
+      <li>
+        <a href="health_maintenance_use_case.html">Health Maintenance Lab Use Case</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">V2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="hl7v2genderharmony.html">V2 Gender Harmony</a>
+      </li>
+      <li>
+        <a href="hl7v2examples.html">V2 Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">CDA
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="cdagenderharmony.html">CDA Gender Harmony</a>
+      </li>
+      <li>
+        <a href="cdaexamples.html">CDA Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="fhirgenderharmony.html">FHIR Guidance</a>
+      </li>
+      <li>
+        <a href="fhirdesignbackground.html">FHIR Design Background</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="externalstandards.html">External Standards</a>
+  </li>
+  <li>
+    <a href="bibliography.html">Bibliography</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+  <li>
+    <a href="artifacts2.html">All Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Model</b></li>
+
+          <span style="float:right;">
+
+            <a href="standards-history.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="design.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1 - Local Development build (v1.0.0). See the <a href="http://hl7.org/xprod/ig/uv/gender-harmony/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Model</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#modeling-sex-and-gender-representation" id="markdown-toc-modeling-sex-and-gender-representation">Modeling Sex and Gender Representation</a></li>
+  <li><a href="#model-overview" id="markdown-toc-model-overview">Model Overview</a></li>
+  <li><a href="#updates-to-the-model-compared-to-original-specification" id="markdown-toc-updates-to-the-model-compared-to-original-specification">Updates to the model compared to original specification</a></li>
+  <li><a href="#person" id="markdown-toc-person">Person</a></li>
+  <li><a href="#gender-identity-gi" id="markdown-toc-gender-identity-gi">Gender Identity (GI)</a></li>
+  <li><a href="#sex-parameter-for-clinical-use-spcu" id="markdown-toc-sex-parameter-for-clinical-use-spcu">Sex Parameter for Clinical Use (SPCU)</a></li>
+  <li><a href="#recorded-sex-or-gender-rsg" id="markdown-toc-recorded-sex-or-gender-rsg">Recorded Sex or Gender (RSG)</a></li>
+  <li><a href="#name-to-use-ntu" id="markdown-toc-name-to-use-ntu">Name to Use (NtU)</a></li>
+  <li><a href="#pronouns-1" id="markdown-toc-pronouns-1">Pronouns</a></li>
+</ul>
+
+</div>
+<!-- Updates based on Jira tickets 
+Date             Jira ticket        Updated by                   Comment
+2023-06-16       OTHER-2411         Joanie Harper                Added closing parentheses per the Jira ticket https://jira.hl7.org/browse/OTHER-2411
+2023-06-16       OTHER-2586         Joanie Harper                Change field name from Jurisdiction to Issuer, added **Definition**, and put Cardinality on its own
+                                                                   line per https://jira.hl7.org/browse/OTHER-2586
+2023-06-16       OTHER-2587         Joanie Harper                update Source Field Name and Source Field Desription per Jira ticket https://jira.hl7.org/browse/OTHER-2587
+2023-06-16       OTHER-2575         Joanie Harper                Added hyphens per Jira ticket https://jira.hl7.org/browse/OTHER-2575
+2023-06-16       OTHER-2578         Joanie Harper                Updated SPCU section per Jira ticket https://jira.hl7.org/browse/OTHER-2578
+2023-06-23       OTHER-2671         Rob McClure                  Changed all to SPCU or Sex Parameter for Clinical Use
+2023-07-13       OTHER-2463         Cooper Thompson              Updated RSG model definition and other narrative
+2023-07-13       V2-25452           Cooper Thompson              Removed international equivalent references
+2023-07-17       OTHER-2557         Cooper Thompson              Clarified terminology expectations for RSG
+2023-07-25		  OTHER-2708	    	Carol Macumber		 	     	  GI Usage Note change per OTHER-2708
+2023-07-25       OTHER-2539	    	Carol Macumber		 		     GI Usage Note change per OTHER-2539
+2023-07-26		  OTHER-2570			Carol Macumber				     Standardized the use of "Gender Harmony initial informative specification"  when referring to initial 
+                                                                  specification
+2023-08-08       OTHER-2577         Joanie Harper                update text per Jira ticket 
+2023-08-08       OTHER-2585         Joanie Harper                update text per Jira ticket 
+2023-08-08       OTHER-2420         Joanie Harper                update text per Jira ticket 
+2023-08-08       OTHER-2625         Joanie Harper                removed sentence per Jira ticket 
+2023-08-08       OTHER-2582         Joanie Harper                update text per Jira ticket 
+2023-08-08       OTHER-2581         Joanie Harper                update text per Jira ticket 
+2023-08-08       OTHER-2494         Joanie Harper                update text per Jira ticket 
+2023-08-08       OTHER-2540         Joanie Harper                add links for minValueSets per Jira ticket 
+2023-08-08       OTHER-2576         Joanie Harper                update text per Jira ticket 
+2023-08-14       OTHER-2709         Joanie Harper                update text per Jira ticket 
+2023-08-22       OTHER-2532         Rob McClure                  Clarify use of "sex or gender"
+2023-08-22        various           Rob McClure                  Updated RSG description and Usage Notes to clarify that SAAB (and Administrative Gender) can be directly exchanged without "wrapping" in RSG template and as such they should be considered a conformant exchange of USCDI v4 "Sex"
+2023-08-22        OTHER-2512        Rob McClure                  Confirmed removal of ICAO element and added explanation of change.
+2023-08-22        OTHER-2589        Rob McClure                  Added section noting changes in the model when compared to original. Confirmed changes in bindings. provided links to binding strength definitions.
+2023-08-28       OTHER-2569         Joanie Harper                update per Jira ticket -- still need links to V2 spec and CDA spec
+2023-08-28       OTHER-2580         Joanie Harper                update Gender Harmony capitalization
+
+-->
+
+<h3 id="modeling-sex-and-gender-representation">Modeling Sex and Gender Representation</h3>
+
+<p>The World Health Organization (WHO) defines Sex as the “different
+biological and physiological characteristics of males and females, such
+as reproductive organs, chromosomes, hormones, etcetera” and Gender as
+the “socially constructed characteristics of women and men, such as
+norms, roles, and relationships of and between groups of women and men”
+(WHO, 2020.) In clinical practice however, there can be a multiplicity
+of contextual variants over a single time horizon, across multiple
+applications and/or institutions where clinicians, vendors and interface
+developers have been grappling to create their own electronic ‘work
+around’ specification(s) to meet local and/or internal needs.</p>
+
+<p>The gender-marginalized community has health care requirements that
+demand improvements that will benefit all patients. This implementation
+guide provides structural and semantic guidance to vendors and interface
+developers to address these requirements.</p>
+
+<p>The <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=564">HL7 Informative Document: Gender Harmony - Modeling Sex and Gender Representation, Release 1</a>  provides necessary constructs to more
+accurately capture sex and gender identity along with associated context of use.
+While the framework provides the necessary infrastructure, the specific
+changes in individual standards to concretely specify actual implementable 
+structures are detailed in separate specifications (<a href="http://hl7.org/fhir/extensions/extensions-Patient.html">FHIR R5</a>, <a href="https://hl7.org/documentcenter/private/standards/V291_R1_202xmmm.zip">V2.9.1</a>, <a href="http://www.hl7.org/permalink/?GenderHarmonyCDAIG">Representing Sex and Gender in CDA</a>, this implementation 
+guide provides specific additional guidance and cross-paradigm use cases.</p>
+
+<p>In this document, and elsewhere, the phrase “sex or gender” is used to characterize data in which the contextual meaning of the the datum is unclear and its use is an acknowledgement that human discourse regarding this information is often equally unclear. Use of this phrase is not intended to mean a unification of information that is more clearly either Sex Parameter for Clinical Use (SPCU) or gender identity.</p>
+
+<h3 id="model-overview">Model Overview</h3>
+
+<p>The conceptual model outlines the data elements, element attributes,
+terminology bindings and relationships that clarify the meaning and
+context of the information presented to guide and inform changes within
+operational standards. The Model has five (5) major elements independent
+of other components that may also be part of the information model for a
+Person: Gender Identity (GI), Sex Parameter for Clinical Use (SPCU), Recorded Sex
+or Gender (RSG), Name to Use (NtU), and Pronouns.</p>
+
+<p>With the exception of one addition (Recorded Sex or Gender attribute =
+type with datatype = code or constrained text) and one deletion (International Equivalent Recorded Sex or Gender), the model included in
+this implementation guide is exactly as it is in the published Gender Harmony
+informative specification. The addition was made to clarify and cover
+the original intent of Record Sex or Gender, including the ability to
+specify the type or category of sex or gender that is recorded (e.g.,
+Sex Assigned At Birth). The deletion was made in response to ballot feedback that the RSG value element is a CodeableConcept which supports “translation” of local code values to other (international) code systems.</p>
+
+<p>Each of the following sections is structured to align with the UML Model
+in Figure 1 and provides a definition, description, usage notes (if
+applicable), cardinality, and attributes (with recommended terminology
+if applicable) for each model element.</p>
+
+<figure>
+<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="320.7906px" preserveAspectRatio="none" style="width:392px;height:320px;background:#DDDDDD;" version="1.1" viewBox="0 0 392 320" width="392.3833px" zoomAndPan="magnify"><defs /><g><rect fill="#DDDDDD" height="320.7906" style="stroke:none;stroke-width:1.3767835834691855;" width="392.3833" x="0" y="0" /><text fill="#888888" font-family="sans-serif" font-size="27.5357" lengthAdjust="spacing" textLength="108.7659" x="272.6031" y="26.6214">Figure 1</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="346.9495" x="6.8839" y="59.9654">Dot Executable: /opt/local/bin/dot</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="296.0085" x="6.8839" y="82.6662">Dot executable does not exist</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="368.978" x="6.8839" y="105.367">Cannot find Graphviz. You should try</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="6.8839" x="6.8839" y="128.0678">&#160;</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="101.882" x="6.8839" y="150.7686">@startuml</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="71.5927" x="6.8839" y="173.4694">testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="90.8677" x="6.8839" y="196.1701">@enduml</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="6.8839" x="6.8839" y="218.8709">&#160;</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="20.6518" x="13.7678" y="241.5717">or</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="6.8839" x="6.8839" y="264.2725">&#160;</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="302.8924" x="6.8839" y="286.9733">java -jar plantuml.jar -testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="19.275" font-weight="bold" lengthAdjust="spacing" textLength="6.8839" x="6.8839" y="309.6741">&#160;</text></g></svg>
+<figcaption><b>Figure 1: Logical Model for Gender Identity and Sex</b></figcaption>
+</figure>
+<p><br clear="all" /></p>
+
+<p>The gender harmony model sub-elements described below are sex or
+gender information that may be context-dependent; in essence a sex
+and/or gender context type. Some of these types are multi-valued based
+in part on the need for independent, occasionally co-occurring, values
+that are specific to particular contexts of use within that type. The
+sensitivity of these situations heightens the importance of representing
+this data in a way that supports masking and access restrictions. The
+Sex Parameter for Clinical Use (SPCU) can also be affected by independent
+co-occurring contexts of use. Depending upon the procedure ordered, drug
+prescribed, or nature of a clinical report different SPCUs might be
+chosen. This can be reflected in the mapping chosen for a patient for
+specific clinical reasons. The medical record in an EHR system might
+have one set SPCU, and different specific selected SPCUs chosen for
+mapping to NCPDP for a drug prescription, to FHIR for an order, to HL7
+v2.x for another order, and to DICOM for an imaging request. This will
+be especially common during the transition period when some systems have
+been upgraded and others have not.</p>
+
+<p>The rules for these context dependent mappings are not defined in this
+abstract information model. They depend upon the concrete capabilities
+of the target system, and upon the specific clinical context at the
+time. It will be normal to find that when there are many objects related
+to a single patient (orders, reports, observations, etc.) that there are
+different SPCU due to differences in the context of use. Information
+about the context and reason for selection may be incorporated into the
+link to observations or reports that are part of the SPCU, or in the
+comment associated with Gender Identity.</p>
+
+<h3 id="updates-to-the-model-compared-to-original-specification">Updates to the model compared to original specification</h3>
+<p>With the exception of the following noted changes, the model included in this implementation guide matches the model in the published Gender Harmony informative specification.</p>
+<h4 id="recorded-sex-or-gender">Recorded Sex or Gender</h4>
+<ul>
+  <li>Addition of Recorded Sex or Gender attribute = type with datatype = code or constrained text
+    <ul>
+      <li>This addition was made to align with the original context of the data exchanged as an RSG so that users may specify the type or category of sex or gender that is recorded (e.g., “Sex”).</li>
+    </ul>
+  </li>
+  <li>Removed the InternationalEquivalentRecordedSexOrGender element
+    <ul>
+      <li>Reviewers agreed that explicit inclusion of the translation of the value to a code from International Civil Aviation Organization (ICAO) code system was not useful. Implementers that want to send this may do so as a translation of the primary value.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="pronouns">Pronouns</h4>
+<ul>
+  <li>Update of Pronoun binding strength to Example.
+    <ul>
+      <li>The binding strength to the Pronoun value set was originally extensible. Reviewers agreed that this needed to be loosened to example across products to allow for greater flexibility in establishing a base set of jurisdiction appropriate pronouns.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="person">Person</h3>
+
+<p><strong>Definition:</strong> This is an abstract representing a person.</p>
+
+<p><strong>Usage Note:</strong> This class may be mapped onto a concrete class when 
+implemented using a model with concrete classes representing a person 
+where additional attributes can be added or existing attributes can be 
+enhanced. In FHIR currently this would be the following resources: Person, 
+Patient, Practitioner, and RelatedPerson</p>
+
+<h3 id="gender-identity-gi">Gender Identity (GI)</h3>
+
+<p>Gender Identity describes the identity of the person. This
+is important in many social and cultural contexts. It might be missing,
+as for an infant, or multi-valued in some cultures and specific
+situations. The meaning, criteria, and implications of specific gender
+identities is defined by the local culture and society. The terms used
+to capture GI are expected to reflect the variations found in different
+cultures and locations, so only a minimum value set is defined in the
+logical model. Local terminology is expected to extend this value set.</p>
+
+<p><strong>Source:</strong> Person, self-reported only</p>
+
+<p><strong>Definition:</strong> An individual’s personal sense of being a man, woman,
+boy, girl, nonbinary, or something else. This datum represents an
+individual’s identity, ascertained by asking them what that identity is.</p>
+
+<p><strong>Usage Note:</strong> If the Person (such as a fetus, infant, or uncommunicative new patient) is unable to express a personal sense of being a man, woman, boy, girl or any point on the gender spectrum, gender identity may be recorded as Unknown. Unknown can be used in cases where parents do not want to specify a value but one must be recorded. Gender identity can be congruent or incongruent with one’s SPCU or RSG. Persons may identify using different terms at different times for various reasons, or use multiple identities simultaneously, depending on culture.</p>
+
+<p>Given that the gender identity element supports representing multiple gender identities (cardinality is 0..n), individuals who identify as having both Male and Female gender identities (or any other combination) at the same time, each gender identity can be modeled with the same validity period. Alternatively, if implementers and/or systems prefer to use a single code, the gender identity value set is expected to be used as a minimum value set that can be extended to meet jurisdictional requirements. One possible concept that could be considered is bigender.</p>
+
+<p><strong>Cardinality:</strong> 0..n</p>
+
+<h4 id="attributes">Attributes:</h4>
+
+<h5 id="gender-identity">Gender Identity</h5>
+
+<ul>
+  <li>
+    <p>Definition:  An individual’s personal sense of being a man, woman,
+boy, girl, nonbinary, or something else. This datum represents an
+individual’s identity, ascertained by asking them what that identity is.</p>
+  </li>
+  <li>
+    <p>Cardinality 1..1</p>
+  </li>
+  <li>
+    <p>Type: Code or constrained short text</p>
+  </li>
+  <li>
+    <p>Proposed Terminology:</p>
+
+    <ul>
+      <li>
+        <p><a href="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">minValueSet</a>: <a href="http://terminology.hl7.org/ValueSet/gender-identity">Gender Identity</a> valueSet</p>
+      </li>
+      <li>
+        <p><a href="http://hl7.org/fhir/R5/terminologies.html#strength">binding Strength</a>: <a href="http://hl7.org/fhir/R5/terminologies.html#extensible">extensible</a></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="validity-period">Validity Period</h5>
+
+<ul>
+  <li>
+    <p>Definition: The time frame during which this Gender Identity applies
+to the person. May be just an initial dateTime.</p>
+  </li>
+  <li>
+    <p>Usage note: Validity period may be overlapping in the case of
+multiple gender identities (such as for bigender persons, some
+gender-fluid persons, and binary Two-Spirit persons who also identify as
+both male and female).</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: duration or datetime</p>
+  </li>
+</ul>
+
+<h5 id="comment">Comment</h5>
+
+<ul>
+  <li>
+    <p>Definition: Text to further explain the use of the specified gender
+identity or identities.</p>
+  </li>
+  <li>
+    <p>Usage note: Content included may be related to social and/or
+cultural context to be considered when using the Gender Identity,
+particularly with overlapping active values.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: long text</p>
+  </li>
+</ul>
+
+<h3 id="sex-parameter-for-clinical-use-spcu">Sex Parameter for Clinical Use (SPCU)</h3>
+
+<p>Sex Parameter for Clinical Use is provided for use in orders, observations, 
+and other clinical uses. SPCU can be highly contextual and allows specific
+considerations to be provided for potential automated uses and records.
+Examples include:</p>
+
+<ul>
+  <li>
+    <p>A person with polycystic ovary syndrome can be identified in a blood
+work order so that their unexpected hormone levels can be properly
+reported and not rejected as invalid results.</p>
+  </li>
+  <li>
+    <p>A female to male transgender patient early in transition undergoing imaging 
+wherein the device requires selection of either M or F to complete the set up 
+would benefit from an imaging context-specific SPCU noting the patient needs to 
+have the setup for “Female-typical”</p>
+  </li>
+</ul>
+
+<p>There are many other situations involving tumors, resections, congenital
+conditions (i.e., ovotestes), and transgender patients where SPCU can be
+used to provide information that is needed to perform a procedure
+properly. Many procedures need at least a “male” or “female”
+specification (e.g., for radiation shielding).</p>
+
+<p>SPCU provides a general extendable structure. During the transition from 
+old systems to new systems, and as medical technology and science evolve, 
+the rules for SPCU selection and referenced clinical observations will 
+change. As technology changes these business rules may change, and the 
+ordering systems are expected to accommodate changes to the order filling 
+systems. The gender harmony model enables adaptation of old systems and 
+new technologies.</p>
+
+<p>The SPCU, when used for a specific observation, describes a context that 
+clarifies the settings or reference ranges for the observation. For example, 
+the computation of glomerular filtration rate (GFR) based on blood chemistry 
+may use formulas that are different for “male” and “female”. The SPCU for 
+the GFR report can indicate which formula should be used in the computation 
+of that result. In cases where there is a patient level SPCU, the patient 
+level value can be used as a default (any specific use) value unless a 
+specific SPCU for that observation has been specified, in which case, the 
+specified SPCU should apply. The gender harmony model does not cover the 
+description of the use of SPCU in type of observation, but the approach for 
+each is the same.</p>
+
+<p><strong>Definition</strong>: A Sex Parameter for Clinical Use is a parameter that 
+provides guidance on how a recipient should apply settings or reference 
+ranges that are derived from observable information such as an organ 
+inventory, recent hormone lab tests, genetic testing, menstrual status, 
+obstetric history, etc. This property is intended for use in clinical 
+decision making, and indicates that treatment or diagnostic tests should 
+consider best practices associated with the relevant reference population.</p>
+
+<p><strong>Usage Note(s)</strong>: A sex category that supports context specificity,
+derived from observable information, preferably directly linked to the
+information this element summarizes (such as a comment or a linked data
+observation) in order to clarify the context and resulting value. This
+element is intended to characterize observations that align with or vary
+from female or male when the observation(s) are intended for use in a
+clinical activity. In some systems the SPCU value may be automatically
+determined based on the medical record so that they match the recipient
+system’s needs.</p>
+
+<p>There may be restrictions on specific protocols or for specific targets.
+The value multiplicity for a specific protocol or target may be 1..1 or
+0..1. The GH model does not specify how such restrictions should be
+implemented. They should reflect the purpose of the communication and
+the capabilities of the systems involved. This may require individual
+site specific business rules to map a multi-valued SPCU into a single
+value that is appropriate for this context.</p>
+
+<p>The model supports multiple instances of SPCU to allow, when necessary, 
+more than one concurrent SPCU for a patient. For example, there could be 
+multiple procedure results, each identifying a context specific SPCU 
+determination used to set the normal range used. For example an SPCU value 
+and linked comment or specific observation could be summarized as “male, 
+based on hormonal measurement.”</p>
+
+<p><strong>Cardinality</strong>: 0..n, Multiple instances of an SPCU can exist and each 
+instance will have the attributes listed below.</p>
+
+<h4 id="attributes-1">Attributes:</h4>
+
+<h5 id="spcu-category">SPCU Category</h5>
+
+<ul>
+  <li>
+    <p>Definition: A parameter that provides guidance on how a recipient 
+should apply settings or reference ranges that are derived from observable 
+information such as an organ inventory, recent hormone lab tests, genetic 
+testing, menstrual status, obstetric history, etc.</p>
+  </li>
+  <li>
+    <p>Cardinality: 1..1</p>
+  </li>
+  <li>
+    <p>Type: Code or constrained short text</p>
+  </li>
+  <li>
+    <p>Proposed Terminology:</p>
+
+    <ul>
+      <li>
+        <p>ValueSet: <a href="http://terminology.hl7.org/ValueSet/sex-parameter-for-clinical-use">SexForClinicalUseCategory</a> valueSet</p>
+      </li>
+      <li>
+        <p><a href="http://hl7.org/fhir/R5/terminologies.html#strength">binding Strength</a>: <a href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="validity-period-1">Validity Period</h5>
+
+<ul>
+  <li>
+    <p>Definition: Time frame during which this summary value applies to
+the patient. May be just an initial dateTime.</p>
+  </li>
+  <li>
+    <p>Usage Note: Validity period may overlap among different SPCU values
+based on procedure or process used to determine the value</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: duration</p>
+  </li>
+</ul>
+
+<h5 id="comment-1">Comment</h5>
+
+<ul>
+  <li>Definition: Text to further explain the context for this specific
+SPCU categorization.</li>
+  <li>
+    <p>Usage note: Content included may be related to
+social and/or cultural context to be considered or additional
+information related to the linked observations, particularly with
+overlapping active values</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>Type: long text</li>
+</ul>
+
+<h5 id="linked-clinical-observation">Linked Clinical Observation</h5>
+
+<ul>
+  <li>
+    <p>Definition: Link to, or identifier of, the observation(s) or report(s) that
+are used to determine the sex category value.</p>
+  </li>
+  <li>
+    <p>Usage Note: The specific implementation of these links will vary
+based on the standard used. This GH model does not specify the encoding
+mechanism for a link. It could be a DOI, a URL, a DICOM SCOORD-3D, etc.
+The specific standards and implementations will specify this. The linked
+information should clearly align with the chosen SPCU. For example, a
+patient with an initial diagnosis of an intersex condition could have
+supporting clinical observations specific to the diagnosis. Additional
+information may be provided in the Comment attribute.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..n</p>
+  </li>
+  <li>
+    <p>Type: string</p>
+  </li>
+</ul>
+
+<h3 id="recorded-sex-or-gender-rsg">Recorded Sex or Gender (RSG)</h3>
+
+<p>Recorded Sex or Gender information may originate from a physical or electronic document that was provided to a medical provider. This information may also originate from fields in medical systems that were initially populated using those documents, or via patient attestations.  The rules for collection of these documents and fields have varied significantly over time and place therefore  the relationship to current Gender Identity or Sex Parameters for Clinical Use may be unclear.</p>
+
+<p>The RSG model includes source information so that the definition of “X” in a driver’s license can be found if necessary and the jurisdiction can be recorded.</p>
+
+<p><strong>Definition:</strong>  Recorded Sex or Gender (RSG) information includes the various sex and gender concepts that are often used in existing systems but are known to NOT represent a Gender Identity, Sex Parameter for Clinical Use, or attributes related to sexuality, such as sexual orientation, sexual activity, or sexual attraction.</p>
+
+<p><strong>Usage Note:</strong> If a medical system needs to exchange a single internal field labeled “sex” which, over time, has been used to capture both sex and gender, Recorded Sex or Gender may be an appropriate way to exchange such data.</p>
+
+<p>It is understood that administrative gender, administrative sex, and sex assigned at birth are exchanged today, and when exchanged in this way the data should not be considered a representation of Gender Identity (GI) or Sex Parameter for Clinical Use (SPCU). It is expected that these concepts may continue to be exchanged using existing established methods without using RSG. But, when SAAB <em>is exchanged as an RSG entry</em> the “type” should be specified as “sex assigned at birth” or another regionally specific short text string. As a result of feedback from the Gender Harmony Project and in-line with the gender harmony model, the US Office of the National Coordinator (ONC) recognized in its Standards Bulletin (SB22-2), regarding the development and finalization of United States Core Data for Interoperability (USCDI) Version 3, that “the data element Sex (Assigned at Birth) is used to represent different concepts not necessarily associated with what is assigned at the time of birth, such as clinically relevant sex for labs or diagnostic imaging, as well as administrative sex as recorded on birth certificates and health forms.” As a result, ONC changed the name of the data element to “Sex” acknowledging the previous limitation to birth information documentation.</p>
+
+<p><strong>Cardinality:</strong> 0..n</p>
+
+<p><strong>Guidance:</strong>
+When evaluating when and how to exchange sex or gender concepts, consider whether Gender Identity or Sex Parameters for Clinical Use may be better for the relevant use case.  If those concepts are not appropriate or available, then the following approach for exchanging Recorded Sex or Gender may be used:</p>
+
+<ol>
+  <li>Determine which sex or gender concept is relevant for the jurisdiction and use case.  For example, you might identify concepts such as:
+    <ul>
+      <li>Sex Assigned at Birth
+        <ul>
+          <li>For clinical purposes, consider whether Sex Parameters for Clinical Use may more accurately represent the patient’s relevant clinical status.</li>
+          <li>Sex Assigned at Birth may not reflect current clinical attributes of adults.</li>
+          <li>Understand that the Sex Assigned at Birth value in medical systems may not be the value recorded on the birth certificate at the time of birth due to operational and training issues around its collection.</li>
+        </ul>
+      </li>
+      <li>Administrative Sex/Gender
+        <ul>
+          <li>For the purpose of communicating with a patient, consider whether Gender Identity may be more appropriate.</li>
+        </ul>
+      </li>
+      <li>Legal Sex/Gender</li>
+      <li>Billing Sex/Gender</li>
+      <li>Etc.</li>
+    </ul>
+  </li>
+  <li>Determine the best way to exchange this information between systems.  This could involve:
+    <ul>
+      <li>Using existing fields (and their associated terminology) such as:
+        <ul>
+          <li>Patient.gender in FHIR</li>
+          <li>PID-8, GT1-9, NK1-15 in HL7v2</li>
+          <li>Birth Sex Observation template or Patient.administrativeGenderCode in CDA</li>
+        </ul>
+      </li>
+      <li>Creating jurisdiction or use case specific structures that are directly tied to the specific concept being exchanged, such as:
+        <ul>
+          <li>New jurisdictional or use case specific extensions for FHIR</li>
+          <li><a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-birthsex.html">us-core-birthsex</a></li>
+          <li><a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-sex.html">us-core-sex</a></li>
+          <li><a href="https://simplifier.net/hl7fhirukcorer4/extension-ukcore-birthsex">ukcore-birthsex</a></li>
+          <li>New template for CDA</li>
+        </ul>
+      </li>
+      <li>Using a generic structure
+        <ul>
+          <li>The individual-recordedSexOrGender FHIR extension if available for the context in question</li>
+          <li>A FHIR Observation resource</li>
+          <li>OBX or GSR segments in HL7v2</li>
+          <li>Observation template in CDA</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>The value sets used to exchange Recorded Sex or Gender values are expected to be defined by the owner of the specific concept being exchanged.  For example, if you are exchanging the sex on the driver’s license in a specific region, that region’s driver registration authority would define the value set, and those values would be used in the exchange.  As such, creating new value sets to represent Recorded Sex or Gender values is not necessary and should be avoided.</p>
+
+<h4 id="attributes-2">Attributes:</h4>
+
+<h5 id="source-recorded-sex-or-gender">Source Recorded Sex or Gender</h5>
+
+<ul>
+  <li>
+    <p>Definition: The actual value found on the document. This may be in
+any character set. For example, a Russian identity card might have the
+value ‘ж’ for sex.</p>
+  </li>
+  <li>
+    <p>Cardinality: 1..1</p>
+  </li>
+  <li>
+    <p>Type: Code or constrained short text</p>
+  </li>
+</ul>
+
+<p>Note that based upon ballot feedback, the proposed InternationalEquivalentRecordedSexOrGender element with values based upon the International Civil Aviation Organization (ICAO) code system is no longer included. Implementers may provide an ICAO translation to the value provided.</p>
+
+<h5 id="type">Type</h5>
+
+<ul>
+  <li>
+    <p>Definition: The type or category of sex or gender identity that is recorded.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: code or constrained text</p>
+  </li>
+</ul>
+
+<h5 id="record-description">Record Description</h5>
+
+<ul>
+  <li>
+    <p>Definition: A short phrase that describes the document or record
+that includes the sex or gender identity value. E.g., national ID card, birth
+certificate, passport.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: string</p>
+  </li>
+</ul>
+
+<h5 id="acquisition-date">Acquisition Date</h5>
+
+<ul>
+  <li>
+    <p>Definition: The date that the document was scanned, processed, etc.
+to extract the sex or gender identity information.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: datetime</p>
+  </li>
+</ul>
+
+<h5 id="validity-period-2">Validity Period</h5>
+
+<ul>
+  <li>
+    <p>Definition: The time frame during which the document is valid. May be just an
+initial dateTime.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: duration</p>
+  </li>
+</ul>
+
+<h5 id="issuer">Issuer</h5>
+
+<ul>
+  <li>
+    <p>Definition: Jurisdiction or organization that issued the document.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: string</p>
+  </li>
+</ul>
+
+<h5 id="source-field-name">Source Field Name</h5>
+
+<ul>
+  <li>
+    <p>Definition: Name of the source field in the document for this Recorded 
+Sex or Gender instance.</p>
+  </li>
+  <li>
+    <p>Usage Note: This may be in any character set. For example, on a Russian
+identity card it could be ‘Пол’.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: string</p>
+  </li>
+</ul>
+
+<h5 id="source-field-description">Source Field Description</h5>
+
+<ul>
+  <li>
+    <p>Definition: A description of the source field in the document for this 
+Recorded Sex or Gender instance.</p>
+  </li>
+  <li>
+    <p>Usage Note: Further description of the source field to clarify
+intent of meaning. This may be a link or an external reference. For
+example, there is an international standard for the fields on an
+international travel passport.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: string</p>
+  </li>
+</ul>
+
+<h3 id="name-to-use-ntu">Name to Use (NtU)</h3>
+
+<p>The Name to Use enables care providers to use the name that is chosen by
+the person. This element may match but is distinct from a person’s legal
+name and is the appropriate name to be used in person-centered
+healthcare conversations. Some cultures have very long names, and expect
+that for all but mandatory legal situations, the person will use a more
+manageable name. Jurisdictions have different rules and processes for
+name changes, so there is often a mismatch that can be prolonged in
+difficult situations.</p>
+
+<p><strong>Definition:</strong> Text attribute that provides the name that should be
+used when addressing or referencing the patient.</p>
+
+<p><strong>Usage Note:</strong> This information is usually provided by the patient.
+Depending on the standard applicable to an implementation, this might be
+encoded within a Person/Patient Name field with an appropriate name type
+qualifier but is independent of any other name type or name component.
+This may be a nickname or formal name. Multiple cardinalities are
+required to support changes in desired name over time, such as when a
+patient desires a change in name to align with expressed gender identity. This
+means a validity period and a comment attribute to allow text that can
+be used to capture context for use of the name.</p>
+
+<p><strong>Cardinality:</strong> 0..n</p>
+
+<h4 id="attributes-3">Attributes:</h4>
+
+<h5 id="name">Name</h5>
+
+<ul>
+  <li>
+    <p>Definition: Name to Use when addressing or referencing the patient.</p>
+  </li>
+  <li>
+    <p>Cardinality: 1..1</p>
+  </li>
+  <li>
+    <p>Type: string</p>
+  </li>
+</ul>
+
+<h5 id="validity-period-3">Validity Period</h5>
+
+<ul>
+  <li>
+    <p>Definition: The timeframe during which the Name is to be used. May
+just include a start date.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: duration</p>
+  </li>
+</ul>
+
+<h5 id="comment-2">Comment</h5>
+
+<p>–  Definition: Text to further explain use of the Name. This may be
+related to social and/or cultural context.</p>
+
+<ul>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: long text</p>
+  </li>
+</ul>
+
+<h3 id="pronouns-1">Pronouns</h3>
+
+<p><strong>Definition:</strong> Pronoun(s) specified by the patient to use when
+referring to the patient in speech, in clinical notes, and in written
+instructions to caregivers.</p>
+
+<p><strong>Usage Note:</strong> Personal pronouns are words used instead of a noun or a noun phrase used to refer to people. Avoiding incorrect pronoun use and patient misgendering is crucial in providing care to gender-diverse populations. It is important to reliably exchange personal pronouns that the individual has specifically reported they want used. The information could be considered a primary
+(first class) element associated with the demographic information for
+the patient. However, it may require representation as an observation
+about the patient. Local policy will determine how pronouns are chosen
+for infants and other similar situations. Policy and local custom will
+determine what to use when this attribute is not present, or when
+multiple are present.</p>
+
+<p>Different pronouns may be used in one care setting than another care
+setting. The pronouns used in the work environment may be different than
+those in the care setting.</p>
+
+<p><strong>Cardinality:</strong> 0..n</p>
+
+<h4 id="attributes-4">Attributes:</h4>
+
+<h5 id="pronoun">Pronoun</h5>
+
+<ul>
+  <li>
+    <p>Definition: The noun or a noun phrase used for the patient.</p>
+  </li>
+  <li>
+    <p>Cardinality: 1..1</p>
+  </li>
+  <li>
+    <p>Type: Code or constrained short text</p>
+  </li>
+  <li>
+    <p>Proposed Terminology:</p>
+
+    <ul>
+      <li>
+        <p>ValueSet: <a href="http://terminology.hl7.org/ValueSet/pronouns">Pronouns</a> valueSet</p>
+      </li>
+      <li>
+        <p><a href="http://hl7.org/fhir/R5/terminologies.html#strength">binding Strength</a>: <a href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="validity-period-4">Validity Period</h5>
+
+<ul>
+  <li>
+    <p>Definition: The timeframe during which the pronoun is to be used.
+May just include a start date.</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: duration</p>
+  </li>
+</ul>
+
+<h5 id="comment-3">Comment</h5>
+
+<ul>
+  <li>
+    <p>Definition: Text to further explain use of the pronoun.</p>
+  </li>
+  <li>
+    <p>Usage Note: Multiple pronoun entries may exist and overlap as some
+persons utilize multiple pronouns simultaneously or switch usage based
+on context, familiarity, comfortability, and/or Gender Identity (for
+instance, in the case of bigender or gender-fluid persons).</p>
+  </li>
+  <li>
+    <p>Cardinality: 0..1</p>
+  </li>
+  <li>
+    <p>Type: long text</p>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="standards-history.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="design.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/Vocab">HL7 Terminology Infrastruture Work Group</a>.  Package hl7.xprod.uv.gender-harmony#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 19:15-0500">2023-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/xprod/ig/uv/gender-harmony/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

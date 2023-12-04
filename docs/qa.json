@@ -1,0 +1,12 @@
+{
+  "url" : "http://hl7.org/xprod/ig/uv/gender-harmony/ImplementationGuide/hl7.xprod.uv.gender-harmony",
+  "name" : "hl7genderharmony",
+  "package-id" : "hl7.xprod.uv.gender-harmony",
+  "ig-ver" : "1.0.0",
+  "date" : "Tue, 21 Nov, 2023 19:15:08 -0500",
+  "errs" : 1,
+  "warnings" : 5,
+  "hints" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)"
+}
